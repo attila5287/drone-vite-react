@@ -14,6 +14,11 @@ function App() {
       "pk.eyJ1IjoiYXR0aWxhNTIiLCJhIjoiY2thOTE3N3l0MDZmczJxcjl6dzZoNDJsbiJ9.bzXjw1xzQcsIhjB_YoAuEw";
     mapRef.current = new mapboxgl.Map({
       container: mapContainerRef.current as HTMLElement,
+      center: [-104.98887493053121, 39.73899257929499], // civic
+      zoom: 18,
+      pitch: 45,
+      bearing: -40,
+      style: "mapbox://styles/mapbox/standard",
     });
 
     return () => {
